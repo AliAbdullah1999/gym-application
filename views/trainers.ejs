@@ -1,0 +1,15 @@
+<%- include('components/header') %>
+<section class="trainers">
+  <h2>Our Trainers</h2>
+  <div class="trainer-list">
+    <% trainers.forEach(trainer => { %>
+      <div class="trainer-card">
+        <img src="<%= trainer.image %>" alt="<%= trainer.name %>">
+        <h3><%= trainer.name %></h3>
+        <p><%= trainer.specialty %> - <%= trainer.city %></p>
+        <a href="/trainers/<%= trainer.id %>">View Profile</a>
+      </div>
+    <% }) %>
+  </div>
+</section>
+<%- include('components/footer') %>

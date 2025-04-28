@@ -1,0 +1,18 @@
+{
+  "name": "gym-application",
+  "version": "1.0.0",
+  "description": "This application contains code of the gym application",
+  "main": "index.js",
+  "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node index.js && nodemon ejs"
+},
+  "author": "Ali Abdullah",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongodb": "^6.16.0",
+    "nodemon": "^3.1.10"
+  }
+}
